@@ -2,6 +2,7 @@ import Articlethumb from '../Articlethumb/Articlethumb';
 import './Articlelist.css';
 
 function Articlelist({ stories }) {
+    console.log(stories)
     const allThumbs = stories.map(story => {
         return (
             <Articlethumb 

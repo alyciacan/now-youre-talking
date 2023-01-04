@@ -1,10 +1,17 @@
 import './Searchbar.css';
+import { sectionVals } from '../utils/section-vals';
 
-function Searchbar() {
+function Searchbar({ stories, selectCategory }) {
+    const topicOptions = Object.keys(sectionVals).map(topic => {
+        return (<option value={ topic } key={ topic }>{ topic }</option>)
+    })
+
     return (
-        <div>
-            Search bar
-        </div>
+        <form>
+            <select name="categories" onChange={selectCategory}>
+                { topicOptions }
+            </select>
+        </form>
     )
 }
 
