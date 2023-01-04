@@ -1,0 +1,54 @@
+.thumb-content {
+    border-radius: 15px;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.thumb-date,
+.thumb-section {
+    background-color: white;
+    max-width: 30%;
+    border-radius: 15px;
+    padding: 1%;
+    font-weight: bold;
+}
+
+a {
+    all: unset;
+}
+
+.expand-btn {
+    border-radius: 50%;
+    border: none;
+    height: fit-content;
+    width: 2em;
+    font-size: 200%;
+    transition: all .5s ease;
+    background-color: white;
+}
+
+.expand-btn:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1%;
+}
+
+.bubble-box {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 2%;
+}
+
+.article-thumb:hover {
+    transform: scale(1.01);
+    transition: all ease 500ms;
+}

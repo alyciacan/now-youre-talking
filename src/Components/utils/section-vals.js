@@ -1,4 +1,5 @@
 export const sectionVals = {
+    "All": 'home',
     "Arts": 'arts',
     "Automobiles": 'automobiles',
     "Books": 'books',
@@ -6,7 +7,6 @@ export const sectionVals = {
     "Fashion": 'fashion',
     "Food": 'food',
     "Health": 'health',
-    "Home": 'home',
     "Insider": 'insider',
     "Magazine": 'magazine',
     "NY Region": 'nyregion',

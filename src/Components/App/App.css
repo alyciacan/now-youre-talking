@@ -1,7 +1,6 @@
-.App {
+.app {
   text-align: center;
-  font-family: 'Work Sans', sans-serif;
-
+  font-family: 'Raleway', sans-serif;
 }
 
 .header {
@@ -14,5 +13,6 @@
 
 .header>h1{
   font-style: italic;
+  font-weight: bold;
   font-size: 250%;
 }

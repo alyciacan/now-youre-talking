@@ -11,7 +11,6 @@ function App() {
   const [filteredStories, setFilteredStories] = useState([]);
 
   useEffect(() => {
-    console.log('useeffect triggered', filter.current)
     getTopStories()
       .then(stories => setStories(stories.results))
   }, [])
@@ -23,14 +22,13 @@ function App() {
   }
 
   const checkForFilteredStories = () => {
-    console.log('checking for filtered stories')
     if(filteredStories.length) {
       return filteredStories;
     } else {
       return stories;
     }
   }
-  console.log(filteredStories.length)
+
   return (
   <main className="app">
     <header className="header">
@@ -40,7 +38,7 @@ function App() {
         selectCategory={ selectCategory }/>
     </header>
     <hr />
-    <Articlelist stories={ checkForFilteredStories() } />
+    <Articlelist stories={ checkForFilteredStories() } header={ filter.current } />
   </main>
   );
 }
