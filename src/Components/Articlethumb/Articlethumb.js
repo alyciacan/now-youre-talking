@@ -1,14 +1,15 @@
 import './Articlethumb.css';
 
-function Articlethumb({category, date, title}) {
+function Articlethumb({story}) {
+    const style = {backgroundImage: `url(${story.multimedia[1].url})`}
     return (
         <article className="article-thumb">
-            <button className="expand-btn">➚</button>
-            <div className="thumb-content">
-                <p>{ category }</p>
-                <p>{ date }</p>
+            <div className="thumb-content" style={ style }>
+                <button className="expand-btn">➚</button>
+                <p>{ story.section }</p>
+                <p>{ story.date }</p>
             </div>
-            <h3>{ title }</h3>
+            <h3>{ story.title }</h3>
         </article>
     )
 }

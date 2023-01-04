@@ -1,8 +1,14 @@
 import Articlethumb from '../Articlethumb/Articlethumb';
-import './articlelist.css';
+import './Articlelist.css';
 
-function Articlelist(props) {
-
+function Articlelist({ stories }) {
+    const allThumbs = stories.map(story => {
+        return (
+            <Articlethumb 
+                story={story}
+                key={ story.short_url }/>
+            )
+    })
     return (
         <section>
             <h2>Top Articles</h2>
