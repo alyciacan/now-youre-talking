@@ -1,6 +1,6 @@
 .thumb-content {
-    border-radius: 15px;
-    min-height: 25vh;
+    /* border-radius: 15px; */
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,7 +48,23 @@ a {
     padding: 0 0 0 2%;
 }
 
+.story-title {
+    height: 30px;
+}
+
 .article-thumb:hover {
-    transform: scale(1.01);
+    overflow: none;
     transition: all ease 500ms;
+    height: 500px;
+}
+
+.article-thumb {
+    overflow: hidden;
+    height: 370px; 
+    border-radius: 15px;
+    transition: all ease 500ms;
+}
+
+.hidden-parts {
+    height: 30px;
 }

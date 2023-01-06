@@ -5,13 +5,28 @@
 }
 
 .article-list {
-    padding: 1%;
+    padding: 3%;
 }
 
 .article-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.article-container:hover .article-thumb {
+    transform: translateX(-10%);
+    transform: translateY(-10%);
+}
+
+.article-container .article-thumb:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.article-thumb:focus ~ .article-thumb {
+    transform: translateX(10%);
+    transform: translateY(10%);
 }

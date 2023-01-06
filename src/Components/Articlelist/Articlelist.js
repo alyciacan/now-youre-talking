@@ -2,6 +2,7 @@ import Articlethumb from '../Articlethumb/Articlethumb';
 import './Articlelist.css';
 
 function Articlelist({ stories, header }) {
+    console.log(header)
     const allThumbs = stories.map(story => {
         if(story.title) {
         return (
@@ -13,7 +14,7 @@ function Articlelist({ stories, header }) {
     })
 
     const makeHeader = () => {
-        if(header === "Home") {
+        if(header === "Home" || header === "All") {
             return "Today's Top Stories";
         } else {
             return header;
