@@ -58,17 +58,22 @@ NYT is my submission for the [Mod 4 take-home challenge](https://mod4.turing.edu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-My process:
+### My process:
+
+<img width="732" alt="Screen Shot 2023-01-06 at 7 16 32 AM" src="https://user-images.githubusercontent.com/105533317/211041495-2745051b-1a6e-49fe-b085-1b5e08b69f2b.png">
+
 * One of the first decisions I made was to make this a __single-page__ app that links to the NYT articles, rather than employing React Router with dynamic routing to show detail pages. My rationale: the details provided by the NYT Top Stories API weren't comprehensive enough to warrant a separate single-view page for each article- as a user, I'd be annoyed to have to navigate to an intermediary link with very little new information provided (read: too much work, too little value added)! My other reason for wanting to make this a single-page app was that I hadn't really had the opportunity to write Netflix-inspired animation in CSS, and I thought this would be a cool way to use and learn that type of animation. 
 
 * Something I'm proud of is how quickly this app came together, and how closely it matches my plan. It's definitely an __MVP__, and there are features I want to add: a search function and a way for users to tell which articles they have read, for starters, but I am pleased with what I accomplished.
 
-### Built (in about 8 hours) with
+<img width="729" alt="Screen Shot 2023-01-06 at 7 16 41 AM" src="https://user-images.githubusercontent.com/105533317/211041270-23374a0f-5d64-4abc-86c8-1562bdb82718.png">    
+
+### Built With
 
 * ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 * ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 * ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-* ![Webpack] (https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
+* ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
