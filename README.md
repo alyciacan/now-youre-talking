@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <img width="1009" alt="Screen Shot 2023-01-05 at 6 24 03 PM" src="https://user-images.githubusercontent.com/105533317/210917228-3d742643-5be8-43d3-8f56-b5ae6b02c681.png">
 
-In the project directory, you can run:
 
-### `npm start`
+<h4 align="center"><a href="https://now-youre-talking.vercel.app/">Deploy Link</a></h4>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <p align="center">
+    <b>N</b>ow <b>Y</b>ou're <b>T</b>alking is a sleek, modern app featuring top news stories from the <b>N</b>ew <b>Y</b>ork <b>T</b>imes (see what I did there?)
+    <br />
+  </p>
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#highlights">Highlights</a></li>
+    <li><a href="#context">Context</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- ABOUT THE PROJECT -->
+## About The Project
+<div align="center">
+<img height="450" src="https://user-images.githubusercontent.com/105533317/210921180-f2c87dc2-50dc-4911-bc30-1c7f1ae67bd7.png" />
+<br />
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+NYT is my submission for the [Mod 4 take-home challenge](https://mod4.turing.edu/projects/take_home/take_home_fe), a solo project with the following goals:
+*  In about 8 hours, produce an app that shows: 
+- [ ] A list of articles
+- [ ] A “detailed” view for each article (as opposed to summary/list view)
+- [ ] Articles in the list must link to the detailed article view you create
+- [ ] Some sort of search, filter, OR sort
+- [ ] Should be easy-to-use, information is clear, and navigation is painless
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `npm run eject`
+My process:
+* One of the first decisions I made was to make this a __single-page__ app that links to the NYT articles, rather than employing React Router with dynamic routing to show detail pages. My rationale: the details provided by the NYT Top Stories API weren't comprehensive enough to warrant a separate single-view page for each article- as a user, I'd be annoyed to have to navigate to an intermediary link with very little new information provided (read: too much work, too little value added)! My other reason for wanting to make this a single-page app was that I hadn't really had the opportunity to write Netflix-inspired animation in CSS, and I thought this would be a cool way to use and learn that type of animation. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Something I'm proud of is how quickly this app came together, and how closely it matches my plan. It's definitely an __MVP__, and there are features I want to add: a search function and a way for users to tell which articles they have read, for starters, but I am pleased with what I accomplished.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built (in about 8 hours) with
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+* ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+* ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+* ![Webpack] (https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Learn More
+<!-- HIGHLIGHTS -->
+## Highlights
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [ ] Some super-sweet and smooth CSS animations
+- [ ] Effective use of React and JS
+- [ ] React Hooks
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Code Splitting
+### Installation
+To get a local copy up and running follow these simple example steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Get a free API Key at [New York Times API](https://developer.nytimes.com/apis)
+2. Clone down the repo
+   ```sh
+   git clone https://github.com/alyciacan/now-youre-talking.git
+   ```
+3. cd into the directory
+   ```sh
+   cd now-youre-talking
+4. Install NPM packages
+   ```sh
+   npm install
+   ```
+5. Enter your API in `config.js`
+   ```js
+   const API_KEY = 'ENTER YOUR API';
+   ```
 
-### Analyzing the Bundle Size
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+<!-- CONTEXT -->
+## Context
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+I'm a student in the Front-End Software Engineering program at [Turing School of Software and Design](https://frontend.turing.edu/). I have been coding (seemingly non-stop) and learning since July 2022, and in that time, I have learned to use <b>React, JSX, React Router, Cypress, CSS, Vanilla JS, Express</b>, and more!
 
-### Advanced Configuration
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- CONTACT -->
+## Contact
 
-### Deployment
+Alycia Canavan     
+[Email](mailto:alycia.canavan@gmail.com)      
+[GitHub](https://github.com/alyciacan)    
+[LinkedIn](www.linkedin.com/in/alycia-canavan)        
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Project Link: [NYT Repo](https://github.com/alyciacan/now-youre-talking)          
+Deployed Link: [NYT Deployed](https://now-youre-talking-c7op7uhoq-alyciacan.vercel.app/)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
